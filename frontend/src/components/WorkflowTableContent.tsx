@@ -40,7 +40,7 @@ const WorkflowTableContent = () => {
   useEffect(() => {
   const fetchWorkflows = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/workflows", {
+      const res = await fetch("https://workflow-l9v3.onrender.com/api/workflows", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
